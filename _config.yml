@@ -1,5 +1,6 @@
 name: nordlicht
 markdown: redcarpet
+pygments: true
 redcarpet:
     extensions: ["with_toc_data"]
-pygments: true
+exclude: ["README.md"]
