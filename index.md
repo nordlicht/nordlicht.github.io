@@ -38,8 +38,8 @@ Basic usage: `nordlicht video.mp4 -w 1000 -h 150 -o barcode.png` converts *video
 
 ### Library
 
-- API documentation: see [src/nordlicht.h](http://github.com/nordlicht/nordlicht/blob/master/src/nordlicht.h)
-- Usage examples: see [examples/nordlicht-example.c](http://github.com/nordlicht/nordlicht/blob/master/examples/nordlicht-example.c)
+- API documentation: see [nordlicht.h](http://github.com/nordlicht/nordlicht/blob/master/nordlicht.h)
+- Usage examples: see [testsuite.c](http://github.com/nordlicht/nordlicht/blob/master/testsuite.c)
 
 ## Integrations
 
