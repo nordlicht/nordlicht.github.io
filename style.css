@@ -14,7 +14,8 @@ body {
 }
 
 #menu {
-    margin: 2em;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 #menu img {
@@ -27,7 +28,6 @@ body {
 #menu ul {
     background: #1c1c1c;
     overflow: hidden;
-    border-top: solid 1px #484846;
 }
 
 #menu li {
@@ -57,7 +57,7 @@ body {
 }
 
 #main blockquote {
-    font-size: 110%;
+    font-size: 130%;
 }
 
 #main p, #main ul, #main ol, #main pre, #main h2, #main h3, #main h4, #main hr, #main dl {
@@ -74,12 +74,29 @@ body {
 }
 
 #main img {
-    max-height: 25em;
+    width: 100%;
+}
+
+#main .nordlicht {
+    color: #ddd6d4;
+    background: black;
+    width: 95vw;
+    margin-left: calc(-47.5vw + 50%);
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+#main .nordlicht img {
+    width: 95vw;
     display: block;
-    margin: auto;
-    width: 90vw;
-    margin-left: calc(-45vw + 50%);
-    border: 2px solid black;
+}
+
+#main .nordlicht p {
+    margin-top: 0.4em;
+    margin-bottom: 0;
+    margin-left: 1em;
 }
 
 #main h1 {
@@ -108,6 +125,25 @@ body {
     margin-bottom: 15px;
 }
 
+#main table td {
+    min-width: 10em;
+}
+
 code {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+#footer {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    color: #ddd6d4;
+    background: #1c1c1c;
+}
+
+#footer p {
+    padding: 0.5em;
+}
+
+#footer a {
+    color: #ddd6d4;
 }
