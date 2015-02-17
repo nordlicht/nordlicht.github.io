@@ -3,9 +3,7 @@ layout: default
 title: nordlicht - create colorful barcodes from video files
 ---
 
-![](/images/nordlicht-logo.png)
-
-> nordlicht is a C library for converting video files into colorful barcodes. It is inspired by the [Moviebarcode Tumblr](http://moviebarcode.tumblr.com/), but aims at the next step: Integrating these barcodes into video players to make navigation faster and more precise.
+> *nordlicht* is a C library for converting video files into colorful barcodes. It is inspired by the [Moviebarcode Tumblr](http://moviebarcode.tumblr.com/), but aims at the next step: Integrating these barcodes into video players to make navigation faster and more precise.
 >
 > *nordlicht* provides a command line tool, which you can use to generate your own barcodes easily.
 
@@ -18,46 +16,6 @@ Here's the barcode for [Tears of Steel](http://tearsofsteel.org/). *nordlicht* t
 This barcode of [Elephants Dream](http://www.elephantsdream.org/) uses the *vertical* style, which compresses video's frames to columns and rotates them 90 degrees counterclockwise. This style emphasizes the movement of characters:
 
 ![](/images/elephants-dream-vertical.png)
-
-## Installation
-
-There are packages for some Linux distributions:
-
-- Arch Linux: Install [`nordlicht`](https://aur.archlinux.org/packages/nordlicht/) from the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository)
-- Gentoo: Install `media-video/nordlicht` from the *multimedia* [overlay](https://www.gentoo.org/proj/en/overlays/userguide.xml)
-- openSUSE: Install [`nordlicht`](http://packman.links2linux.de/package/nordlicht) from [Packman](http://en.opensuse.org/Additional_package_repositories#Packman)'s *Multimedia* project
-- Ubuntu: Install `nordlicht` from Launchpad's [ppa:blinry/nordlicht](https://launchpad.net/~blinry/+archive/nordlicht), [here's how](https://help.launchpad.net/Packaging/PPA/InstallingSoftware)
-
-On other operating systems, get CMake, FFmpeg/libav, libpng, [popt](http://freecode.com/projects/popt), and [help2man](https://www.gnu.org/software/help2man/), and issue: `cmake .. && make` to create the `nordlicht` binary. Consider [contributing](#contributing) a package!
-
-## Usage
-
-### Command line tool
-
-Basic usage: `nordlicht video.mp4 -w 1000 -h 150 -o barcode.png` converts *video.mp4* to a barcode of 1000 x 150 pixels size and writes it to *barcode.png*. Run `nordlicht --help` to learn more.
-
-### Library
-
-- API documentation: see [nordlicht.h](http://github.com/nordlicht/nordlicht/blob/master/nordlicht.h)
-- Usage examples: see [testsuite.c](http://github.com/nordlicht/nordlicht/blob/master/testsuite.c)
-
-## Integrations
-
-### mpv
-
-For [mpv](http://mpv.io/) (>= 0.3.6), there is an experimental [lua plugin](http://github.com/nordlicht/nordlicht/blob/master/utils/mpv-nordlicht.lua). Symlink the file from `~/.mpv/lua/`, and mpv displays a live-updating barcode of the current video file at the top. You can turn it on and off by pressing `n`. You'll need ImageMagick! This is how it looks like (for [Decay](http://www.decayfilm.com/)):
-
-![](/images/mpv-integration.png)
-
-For mpv >= 0.2.0, there is an older script called [mpv-nordlicht](http://github.com/nordlicht/nordlicht/blob/master/utils/mpv-nordlicht). Put it in your `PATH` and use it instead of `mpv`. It doesn't support multiple files, and you cannot hide the barcode.
-
-## Contributing
-
-Development of *nordlicht* happens on GitHub. Please report any bugs or ideas to the [issue tracker](https://github.com/nordlicht/nordlicht/issues). To contribute code, fork the repository and submit a pull request.
-
-You can also help by packaging the software for your favorite operating system, or writing an integration for your favorite video player. Even rough prototypes are highly appreciated!
-
-*nordlicht* uses [semantic versioning](http://semver.org/).
 
 ## License: GPLv2+
 

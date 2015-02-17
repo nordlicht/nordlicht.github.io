@@ -3,13 +3,29 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes">
+        <title>{{ page.title }} · nordlicht</title>
         <link rel="stylesheet" href="/style.css">
         <link rel="shortcut icon" href="/favicon.ico">
     </head>
 
     <body>
+        <div id="menu">
+            <img src="/images/nordlicht-logo.png">
+            <ul>
+                <li {% if page.url == "/index.html" %}class="active"{% endif %} ><a href="/">Home</a></li>
+                <li {% if page.url == "/installation/" %}class="active"{% endif %}><a href="/installation/">Installation</a></li>
+                <li {% if page.url == "/usage/" %}class="active"{% endif %}><a href="/usage/">Usage</a></li>
+                <li {% if page.url == "/integrations/" %}class="active"{% endif %}><a href="/integrations/">Integrations</a></li>
+                <li {% if page.url == "/help/" %}class="active"{% endif %}><a href="/help/">Help</a></li>
+            </ul>
+        </div>
         <div id="main">
+            {% if page.url != "/index.html" %}
+            <h1>
+                {{ page.title }}
+            </h1>
+            {% endif %}
             {{ content }}
         </div>
     </body>
