@@ -60,6 +60,10 @@ body {
     font-size: 130%;
 }
 
+#main blockquote img {
+    margin-bottom: 0.5em;
+}
+
 #main p, #main ul, #main ol, #main pre, #main h2, #main h3, #main h4, #main hr, #main dl {
     margin-bottom: 1em;
 }
