@@ -6,7 +6,49 @@ permalink: /usage/
 
 ## Command line tool
 
-Basic usage: `nordlicht video.mp4 -w 1000 -h 150 -o barcode.png` converts *video.mp4* to a barcode of 1000 x 150 pixels size and writes it to *barcode.png*. Run `nordlicht --help` to learn more.
+Basic usage: `nordlicht video.mp4` converts *video.mp4* to a barcode of 1000 x 100 pixels size and writes it to *video.png*.
+
+Run `nordlicht --help` to see the advanced options:
+
+    Usage: nordlicht [OPTION]... VIDEOFILE
+
+    Options:
+      -w, --width=INT           set the barcode's width; by default it's
+                                "height*10", or 1000 pixels, if both are undefined
+      -h, --height=INT          set the barcode's height; by default it's
+                                "width/10"
+      -o, --output=FILENAME     set output filename, the default is $(basename
+                                VIDEOFILE).png; when you specify an *.bgra file,
+                                you'll get a raw 32-bit BGRA file that is updated
+                                as the barcode is generated
+      -s, --style=STYLE         default is 'horizontal', see "Styles" section
+                                below. You can specify more than one style,
+                                separated by '+', to get multiple tracks
+          --start=FLOAT         specify where to start the barcode (in percent
+                                between 0 and 1)
+          --end=FLOAT           specify where to end the barcode (in percent
+                                between 0 and 1)
+      -q, --quiet               don't show progress indicator
+          --help                display this help and exit
+          --version             output version information and exit
+
+    Styles:
+      horizontal     compress frames to vertical lines and append them
+      vertical       compress frames to horizontal lines and rotate them
+                     counterclockwise by 90 degrees
+      slitscan       take single columns while constantly moving to the right
+                     (and wrapping back to the left)
+      middlecolumn   take the middlemost column of each frame
+      thumbnails     display small thumbnails at regular intervals
+      spectrogram    calculate a spectrogram of the first audio track
+
+    Examples:
+      nordlicht video.mp4                                   generate video.mp4.png
+                                                            of 1000 x 100 pixels size
+      nordlicht video.mp4 --style=vertical                  compress individual
+                                                            frames to columns
+      nordlicht video.mp4 -w 1920 -h 200 -o barcode.png     override size and name of
+                                                            the output file
 
 ## Library
 
