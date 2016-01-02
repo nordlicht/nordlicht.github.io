@@ -13,6 +13,7 @@ For some Linux distributions, there are already packages. For other operating sy
 | --- | --- |
 | Arch Linux | <https://aur.archlinux.org/packages/nordlicht/> |
 | Arch Linux (Git) | <https://aur.archlinux.org/packages/nordlicht-git/> |
+| FreeBSD | `pkg install nordlicht` or via [ports](https://freshports.org/multimedia/nordlicht/) |
 | Gentoo | <http://gpo.zugaina.org/media-video/nordlicht> |
 | openSUSE | <http://packman.links2linux.de/package/nordlicht> |
 | Ubuntu | <https://launchpad.net/~blinry/+archive/nordlicht> |
