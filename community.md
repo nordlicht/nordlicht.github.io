@@ -4,17 +4,16 @@ title: Community
 permalink: /community/
 ---
 
+Here are two ways to get in touch with the *nordlicht* project:
+
 ## Twitter
 
-For status updates and more beautiful example images, follow [@libnordlicht](https://twitter.com/libnordlicht). You're also welcome to request the nordlicht of your favorite movie! :-)
+To get status updates and some more example images, follow [@libnordlicht](https://twitter.com/libnordlicht). You're also welcome to request the nordlicht of your favorite movie! :-)
 
-## Mailing list
+## GitHub
 
-There's a [mailing list](http://lists.rohieb.name/mailman/listinfo/nordlicht) for general discussion, support and release announcements. You can subscribe easily using this form:
-<form Method=post action="http://lists.rohieb.name/mailman/subscribe/nordlicht">
-<input type="text" name="email" size="30" placeholder="Enter your email..."> <input type="Submit" name="email-button" value="Subscribe">
-</form>
+We use GitHub for all forms of discussion. If you find bugs, need help, or have any suggestions, please [create a new issue](https://github.com/nordlicht/nordlicht/issues/new) in *nordlicht*'s issue tracker.
 
-## Bug tracker
+## Email
 
-If you find any bugs or something does not work, please consider creating an issue on [GitHub](https://github.com/nordlicht/nordlicht/issues).
+If you absolutely need to keep something private, you can [contact Sebastian](https://morr.cc/about/) by mail.
