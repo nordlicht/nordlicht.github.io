@@ -10,12 +10,11 @@ For some operating systems, there are already packages. For others, consider bui
 
 |     |     |
 | --- | --- |
-| Arch Linux | <https://aur.archlinux.org/packages/nordlicht/> |
-| Arch Linux (Git) | <https://aur.archlinux.org/packages/nordlicht-git/> |
-| FreeBSD | <https://freshports.org/multimedia/nordlicht/> |
-| Gentoo | <http://gpo.zugaina.org/media-video/nordlicht> |
-| openSUSE | <http://packman.links2linux.de/package/nordlicht> |
-| Ubuntu | <https://launchpad.net/~blinry/+archive/nordlicht> |
+| Arch Linux | [`yaourt`](https://wiki.archlinux.org/index.php/Yaourt) `-S` [`nordlicht`](https://aur.archlinux.org/packages/nordlicht/) |
+| FreeBSD | `pkg install` [`nordlicht`](https://freshports.org/multimedia/nordlicht/) |
+| Gentoo | [`layman`](https://wiki.gentoo.org/wiki/Project:Overlays/User_Guide) `-a jm-overlay && emerge -av` [`nordlicht`](http://gpo.zugaina.org/media-video/nordlicht) |
+| openSUSE | `zypper install` [`nordlicht`](http://packman.links2linux.de/package/nordlicht) (from [Packman](https://en.opensuse.org/Additional_package_repositories#Packman)) |
+| Ubuntu | `apt-get install nordlicht` (from [this PPA](https://launchpad.net/~blinry/+archive/nordlicht)) |
 
 ## Building from source
 
