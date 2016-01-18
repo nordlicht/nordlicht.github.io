@@ -16,6 +16,10 @@ For some operating systems, there are already packages. For others, consider bui
 | openSUSE | `zypper install` [`nordlicht`](http://packman.links2linux.de/package/nordlicht) (from [Packman](https://en.opensuse.org/Additional_package_repositories#Packman)) |
 | Ubuntu | `apt-get install nordlicht` (from [this PPA](https://launchpad.net/~blinry/+archive/nordlicht)) |
 
+## Windows
+
+You can find 32-bit Windows executables attached to the [releases](https://github.com/nordlicht/nordlicht/releases) (under *Downloads*, look for files called `nordlicht-win32-x.y.z.zip`).
+
 ## Building from source
 
 You'll find instruction on how to build nordlicht from source in the README.
