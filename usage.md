@@ -6,7 +6,7 @@ permalink: /usage/
 
 ## Command line tool
 
-Basic usage: `nordlicht video.mp4` converts *video.mp4* to a barcode of 1000 x 100 pixels size and writes it to *video.png*.
+Basic usage: `nordlicht video.mp4` converts *video.mp4* to a "horizontal" barcode and writes it to *video.mp4.nordlicht.png*.
 
 Run `nordlicht --help` to see the advanced options:
 
@@ -14,13 +14,13 @@ Run `nordlicht --help` to see the advanced options:
 
     Options:
       -w, --width=INT           set the barcode's width; by default it's
-                                "height*10", or 1000 pixels, if both are undefined
+                                "height*10", or 1920 pixels, if both are undefined
       -h, --height=INT          set the barcode's height; by default it's
                                 "width/10"
-      -o, --output=FILENAME     set output filename, the default is $(basename
-                                VIDEOFILE).png; when you specify an *.bgra file,
-                                you'll get a raw 32-bit BGRA file that is updated
-                                as the barcode is generated
+      -o, --output=FILENAME     set output filename, the default is VIDEOFILE.png;
+                                when you specify an *.bgra file, you'll get a raw
+                                32-bit BGRA file that is updated as the barcode is
+                                generated
       -s, --style=STYLE         default is 'horizontal', see "Styles" section
                                 below. You can specify more than one style,
                                 separated by '+', to get multiple tracks
@@ -40,17 +40,18 @@ Run `nordlicht --help` to see the advanced options:
                      (and wrapping back to the left)
       middlecolumn   take the middlemost column of each frame
       thumbnails     display small thumbnails at regular intervals
-      spectrogram    calculate a spectrogram of the first audio track
+      spectrogram    spectrogram of the first audio track (not all sample formats
+                     are supported yet)
 
     Examples:
-      nordlicht video.mp4                                   generate video.mp4.png
-                                                            of 1000 x 100 pixels size
-      nordlicht video.mp4 --style=vertical                  compress individual
-                                                            frames to columns
-      nordlicht video.mp4 -w 1920 -h 200 -o barcode.png     override size and name of
-                                                            the output file
+      nordlicht video.mp4
+          generate video.mp4.nordlicht.png of default size
+      nordlicht video.mp4 -s vertical
+          compress individual frames to columns
+      nordlicht video.mp4 -w 1000 -h 1000 -o barcode.png
+          override size and name of the output file
 
 ## Library
 
-- API documentation: see [nordlicht.h](http://github.com/nordlicht/nordlicht/blob/master/nordlicht.h)
-- Usage examples: see [testsuite.c](http://github.com/nordlicht/nordlicht/blob/master/testsuite.c)
+- API documentation: see [nordlicht.h](http://github.com/nordlicht/nordlicht/blob/master/src/nordlicht.h)
+- Usage examples: see [testsuite.c](http://github.com/nordlicht/nordlicht/blob/master/src/testsuite.c)
