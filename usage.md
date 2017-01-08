@@ -6,7 +6,7 @@ permalink: /usage/
 
 ## Command line tool
 
-Basic usage: `nordlicht video.mp4` converts *video.mp4* to a "horizontal" barcode and writes it to *video.mp4.nordlicht.png*.
+Basic usage: `nordlicht video.mp4` converts *video.mp4* to a *horizontal*-style barcode and writes it to *video.mp4.nordlicht.png*. You can find descriptions of the different styles [on the front page](/).
 
 Run `nordlicht --help` to see the advanced options:
 
@@ -24,10 +24,10 @@ Run `nordlicht --help` to see the advanced options:
       -s, --style=STYLE         default is 'horizontal', see "Styles" section
                                 below. You can specify more than one style,
                                 separated by '+', to get multiple tracks
-          --start=FLOAT         specify where to start the barcode (in percent
-                                between 0 and 1)
-          --end=FLOAT           specify where to end the barcode (in percent
-                                between 0 and 1)
+          --start=FLOAT         specify where to start the barcode (ratio between
+                                0 and 1)
+          --end=FLOAT           specify where to end the barcode (ratio between 0
+                                and 1)
       -q, --quiet               don't show progress indicator
           --help                display this help and exit
           --version             output version information and exit
@@ -54,4 +54,4 @@ Run `nordlicht --help` to see the advanced options:
 ## Library
 
 - API documentation: see [nordlicht.h](http://github.com/nordlicht/nordlicht/blob/master/src/nordlicht.h)
-- Usage examples: see [testsuite.c](http://github.com/nordlicht/nordlicht/blob/master/src/testsuite.c)
+- Usage example: see [main.c](http://github.com/nordlicht/nordlicht/blob/master/src/main.c) (look for "interesting stuff begins here!" :-)
