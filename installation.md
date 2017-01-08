@@ -16,7 +16,8 @@ For some operating systems, there are already packages. For others, consider bui
 | FreeBSD | `pkg install` [`nordlicht`](https://freshports.org/multimedia/nordlicht/) |
 | Gentoo | [`layman`](https://wiki.gentoo.org/wiki/Project:Overlays/User_Guide) `-a jm-overlay && emerge -av` [`nordlicht`](http://gpo.zugaina.org/media-video/nordlicht) |
 | openSUSE | `zypper install` [`nordlicht`](http://packman.links2linux.de/package/nordlicht) (from [Packman](https://en.opensuse.org/Additional_package_repositories#Packman)) |
-| Ubuntu | `apt-get install nordlicht` (from [this PPA](https://launchpad.net/~blinry/+archive/nordlicht)) |
+| Ubuntu (> 16.04)| `apt-get install nordlicht` |
+|                 | `apt-get intall libnordlicht-dev` |
 
 ## Windows
 
