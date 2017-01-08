@@ -11,6 +11,8 @@ For some operating systems, there are already packages. For others, consider bui
 |     |     |
 | --- | --- |
 | Arch Linux | [`yaourt`](https://wiki.archlinux.org/index.php/Yaourt) `-S` [`nordlicht`](https://aur.archlinux.org/packages/nordlicht/) |
+| Debian (stretch) | `apt-get install nordlicht`
+|                  | `apt-get install libnordlicht-dev`|
 | FreeBSD | `pkg install` [`nordlicht`](https://freshports.org/multimedia/nordlicht/) |
 | Gentoo | [`layman`](https://wiki.gentoo.org/wiki/Project:Overlays/User_Guide) `-a jm-overlay && emerge -av` [`nordlicht`](http://gpo.zugaina.org/media-video/nordlicht) |
 | openSUSE | `zypper install` [`nordlicht`](http://packman.links2linux.de/package/nordlicht) (from [Packman](https://en.opensuse.org/Additional_package_repositories#Packman)) |
