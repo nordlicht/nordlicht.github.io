@@ -48,7 +48,7 @@ For convenience, nordlicht also supports putting multiple styles in the same ima
 
 ## What's next?
 
-If you're interested, you can learn how to [install](/installation/) and [use](/usage/) nordlicht.
+If you're interested, you can learn how to [install](/installation/) and [use](/usage/) nordlicht. Also make sure to check out our long-term goals on the [integrations](/integrations/) page!
 
 ## License: GPLv2+
 
