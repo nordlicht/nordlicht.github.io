@@ -8,7 +8,9 @@ Here are two ways to get in touch with the *nordlicht* project:
 
 ## Twitter
 
-To get status updates and some more example images, follow [@libnordlicht](https://twitter.com/libnordlicht). You're also welcome to request the nordlicht of your favorite movie! :-)
+To get status updates, follow [@libnordlicht](https://twitter.com/libnordlicht). You're also welcome to request the nordlicht of your favorite movie! :-)
+
+The account [@nordlichtbot](https://twitter.com/nordlichtbot) automatically posts example images periodically. It's part experimentation platform, part continuous integration testing!
 
 ## GitHub
 
