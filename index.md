@@ -1,10 +1,10 @@
 ---
 layout: default
-title: nordlicht - create colorful barcodes from video files
+title: nordlicht - create colorful timebars from video and audio files
 ---
 
 > <img src="/images/nordlicht-logo.png">
-> **nordlicht** is a tool that converts video files into colorful barcodes. nordlicht is free software, supports a large number of styles, and is optimized for speed. It comes with a software library written in C that allows for easy integration into other programs.
+> **nordlicht** is a tool that converts video and audio files into colorful timebars. nordlicht is free software, supports a large number of styles, and is optimized for speed. It comes with a software library written in C that allows for easy integration into other programs.
 
 ## Examples
 

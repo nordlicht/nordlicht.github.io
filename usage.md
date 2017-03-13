@@ -6,27 +6,27 @@ permalink: /usage/
 
 ## Command line tool
 
-Basic usage: `nordlicht video.mp4` converts *video.mp4* to a *horizontal*-style barcode and writes it to *video.mp4.nordlicht.png*. You can find descriptions of the different styles [on the front page](/).
+Basic usage: `nordlicht video.mp4` converts *video.mp4* to a *horizontal*-style timebar and writes it to *video.mp4.nordlicht.png*. You can find descriptions of the different styles [on the front page](/).
 
 Run `nordlicht --help` to see the advanced options:
 
     Usage: nordlicht [OPTION]... VIDEOFILE
 
     Options:
-      -w, --width=INT           set the barcode's width; by default it's
+      -w, --width=INT           set the timebar's width; by default it's
                                 "height*10", or 1920 pixels, if both are undefined
-      -h, --height=INT          set the barcode's height; by default it's
+      -h, --height=INT          set the timebar's height; by default it's
                                 "width/10"
       -o, --output=FILENAME     set output filename, the default is VIDEOFILE.png;
                                 when you specify an *.bgra file, you'll get a raw
-                                32-bit BGRA file that is updated as the barcode is
+                                32-bit BGRA file that is updated as the timebar is
                                 generated
       -s, --style=STYLE         default is 'horizontal', see "Styles" section
                                 below. You can specify more than one style,
                                 separated by '+', to get multiple tracks
-          --start=FLOAT         specify where to start the barcode (ratio between
+          --start=FLOAT         specify where to start the timebar (ratio between
                                 0 and 1)
-          --end=FLOAT           specify where to end the barcode (ratio between 0
+          --end=FLOAT           specify where to end the timebar (ratio between 0
                                 and 1)
       -q, --quiet               don't show progress indicator
           --help                display this help and exit
@@ -48,7 +48,7 @@ Run `nordlicht --help` to see the advanced options:
           generate video.mp4.nordlicht.png of default size
       nordlicht video.mp4 -s vertical
           compress individual frames to columns
-      nordlicht video.mp4 -w 1000 -h 1000 -o barcode.png
+      nordlicht video.mp4 -w 1000 -h 1000 -o timebar.png
           override size and name of the output file
 
 ## Library
